@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+</style>
+</head>
+
+<script src="js/jquery.min.js"></script>
+
+<style>
+
+</style>
+<div class="mask"></div>
+<audio></audio>
+
+<body>
+<!--<div id="fps"></div>-->
+
+<!--<div id="bg_glow"></div>-->
+<!--<div id="overlay"></div>-->
+<!--<canvas id="canvas"></canvas>-->
+<div class="box">
+    <header>
+        <div class="container">
+            <h3 class="left">小小梦音乐播放器</h3>
+            <p class="right">BY - 小小梦</p>
+
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <input type="text" class="search">
+            <ul class="searchUI">
+                <li>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!--控制条-->
+    <footer>
+          <div class="container">
+              <!--按键-->
+<div class="btns  left">
+    <div class="left prev"></div>
+    <div class="left start"></div>
+    <div class="left next"></div>
+</div>
+              <!--进度条-->
+              <div class="left bars">
+                  <div class="left  logo">
+                      <img src="img/tttt.jpg">
+                  </div>
+
+                  <div class="left ctrl-bars-box">
+                      <p>
+                          <span></span>
+                      </p>
+
+                  <div class="left ctrl-bars">
+                      <div class="nowBars"></div>
+                      <div class="ctrl-bth">
+                          <div class="ctrl-bth-small"></div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="left times">
+                      <span class="nowTime">00:00</span>
+                      /
+                      <span class="totalTime">00:00</span>
+                  </div>
+              </div>
+<!--音量-->
+              <div class="left  mosdes">
+                  <div class="left voice"></div>
+                  <div class="left  mode"></div>
+                  <div class="left  play-list">8</div>
+              </div>
+          </div>
+
+        <div class="play-list-box">
+            <div class="list-header">
+                播放列表
+            </div>
+            <ul></ul>
+        </div>
+    </footer>
+</div>
+
+
+
+
+
+<div class="info"></div>
+
+</body>
+<script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.js"></script>
+
+<!--<script src="js/bg.js"></script>-->
+<script src="js/index.js"></script>
+<script>
+var flag=false;
+    $('.play-list').on('click',function () {
+        flag=!flag;
+        if(flag){
+            $('.play-list-box').animate({
+                bottom:46
+            },300);
+
+        }else{
+            $('.play-list-box').animate({
+                bottom:-200
+            },300);
+        }
+
+    })
+
+</script>
+
+</html>
